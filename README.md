@@ -35,10 +35,6 @@ A modern, premium web application for managing Stellar (XLM) assets with seamles
 ### Installation
 
 ```bash
-# Clone the repository
-git clone https://github.com/Anmol-345/stellar-connect-wallet.git
-cd stellar-connect-wallet
-
 # Install dependencies
 npm install
 
