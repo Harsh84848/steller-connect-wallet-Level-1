@@ -1,13 +1,69 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #0a0e1a;
+  --bg-secondary: #111827;
+  --bg-card: rgba(17, 24, 39, 0.85);
+  --bg-card-hover: rgba(17, 24, 39, 0.95);
+  --accent-primary: #6366f1;
+  --accent-primary-light: #818cf8;
+  --accent-glow: rgba(99, 102, 241, 0.3);
+  --accent-cyan: #22d3ee;
+  --accent-green: #10b981;
+  --accent-green-glow: rgba(16, 185, 129, 0.15);
+  --accent-yellow: #eab308;
+  --accent-yellow-glow: rgba(234, 179, 8, 0.12);
+  --text-primary: #f1f5f9;
+  --text-secondary: #64748b;
+  --text-muted: #475569;
+  --error: #ef4444;
+  --error-glow: rgba(239, 68, 68, 0.15);
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-card: rgba(255, 255, 255, 0.08);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+}
+
+input {
+  font-family: 'Inter', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-secondary);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
 }
